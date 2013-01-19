@@ -1,0 +1,180 @@
+/*
+  Styles for PeekBehind.com
+  by Eric Bréchemier
+*/
+
+@import url("fonts/euphorigenic/MyFontsWebfontsKit.css");
+
+/*
+  Euphorigenic font by Ray Larabie
+  http://typodermicfonts.com/
+*/
+h1,h2,h3,h4,h5,h6,
+dt,
+th,
+strong,
+em,
+.euphorigenic {
+  font-family: Euphorigenic-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  Colors
+*/
+body {
+  background-color: black;
+  color: white;
+}
+
+.action {
+  color: yellow;
+}
+
+/*
+  Link colors
+*/
+a:link { /* unvisited */
+  color: yellow;
+  text-decoration: none;
+}
+a:visited {
+  color: orange;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: yellow;
+}
+a:hover:visited {
+  color: black;
+  background-color: orange;
+}
+
+/* Vertical Rhythm with font sizes and margins */
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 4em 2em;
+}
+
+/* Reset margins and padding */
+h1,h2,h3,h4,h5,h6,
+dt,dd,
+table,tr,th,td,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h3,
+dt,
+th {
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 0.66666em;
+  margin-bottom: 0.33333em;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 0.6em;
+}
+
+/* Adjust x-height of em within body copy */
+em {
+  font-size: 1.15em;
+  line-height: 0.86957em;
+}
+
+.initial {
+  font-size: 2em;
+  /* Adjust line height of initials within body copy */
+  line-height: 0.5em;
+}
+
+.pull-quote,
+.call-out {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 4em;
+  padding-left: 1em;
+  border-left: 2px solid yellow;
+}
+
+/* Avoid eye strain by restricting maximum width of paragraphs
+   to about 60-80 characters per line
+*/
+p {
+  max-width: 35em;
+}
+
+/*
+  Styles for tables
+*/
+
+table {
+  width: 100%;
+  border: 2px solid yellow;
+  border-radius: 2em;
+  padding: 1em;
+  margin-bottom: 3em;
+}
+
+/* Give the same width to each column */
+.oneOf4 {
+  width: 25%;
+}
+
+td {
+  padding: 0 1em;
+}
+
+td p {
+  /* Justify text displayed in table columns */
+  text-align: justify;
+}
+
+/* Keep the text in each cell aligned to the top of the row */
+thead,
+tbody {
+  vertical-align: top;
+}
+
+tfoot {
+  vertical-align: bottom;
+}
+
+/* Styles for forms */
+input {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+}
+
+button:hover {
+  background-color: black;
+  color: yellow;
+}
+
+input,
+button {
+  border-radius: 8px;
+}
