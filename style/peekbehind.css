@@ -3,7 +3,7 @@
   by Eric Bréchemier
 */
 
-@import url("fonts/euphorigenic/MyFontsWebfontsKit.css");
+@import url("fonts/euphorigenic/stylesheet.css");
 
 /*
   Euphorigenic font by Ray Larabie
@@ -15,7 +15,7 @@ th,
 strong,
 em,
 .euphorigenic {
-  font-family: Euphorigenic-Regular;
+  font-family: EuphorigenicRegular;
   font-weight: normal;
   font-style: normal;
 }
