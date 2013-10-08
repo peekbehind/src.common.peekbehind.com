@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="peekbehind" basedir=".." default="export">
+  <!--
+    Build script to generate optimized website for Common.PeekBehind.com
+
+    Author: Eric Bréchemier
+    License: http://creativecommons.org/licenses/by/3.0/
+    Version: 2013-10-08
+  -->
+
+  <!-- override defaults locally -->
+  <property file="build/user.properties" />
+
+  <!-- list of parameters used, with default values -->
+
+  <!-- relative path to output folder for the optimized web site -->
+  <property name="output.dir" value="../common.peekbehind.com" />
+
+  <import file="macros.xml" />
+
+  <target name="export" description="Export web site to target folder"
+    depends="html, style, seo"
+  />
+
+  <target name="style" description="Optimize CSS and copy images and fonts"
+    depends="css, images, fonts"
+  />
+
+  <macrodef name="unindent">
+    <attribute name="html" />
+    <sequential>
+      <saxon xml="@{html}"
+           xsl="build/xsl/html5noindent.xsl"
+           out="${output.dir}/@{html}"
+      />
+    </sequential>
+  </macrodef>
+
+  <target name="html" description="Optimize HTML by removing indent">
+    <unindent html="index.html" />
+  </target>
+
+  <target name="css" description="Optimize CSS">
+    <yuicompressor
+      in="style/peekbehind.css"
+      out="${output.dir}/style/peekbehind.css"
+    />
+  </target>
+
+  <target name="images" description="Copy images to website folder">
+    <copy todir="${output.dir}">
+      <fileset dir="." includes="favicon.ico" />
+    </copy>
+    <copy todir="${output.dir}/style">
+      <fileset dir="style" includes="*.png *.jpg" />
+    </copy>
+  </target>
+
+  <target name="fonts" description="Copy fonts to website folder">
+    <copy todir="${output.dir}/style/fonts">
+      <fileset dir="style/fonts" />
+    </copy>
+  </target>
+
+  <target name="seo" description="Copy files for search engine optimization">
+    <copy todir="${output.dir}">
+      <fileset dir="." includes="robots.txt" />
+    </copy>
+  </target>
+
+</project>
