@@ -41,9 +41,6 @@ Except:
   Courtesy of Typodermic Fonts and Fontspring:  
   http://www.fontspring.com/fonts/typodermic/euphorigenic
 
-* Photograph of Eric Bréchemier
-  by [Julien Spiewak][JULIEN-SPIEWAK]: All Rights Reserved
-
 * Ant script and XSLT code: [Creative Commons Attribution][CC-BY]
 * JArgs: [BSD License][JARGS-BSD]
 * Rhino: [Mozilla Public License version 1.1][MPL-1.1]
@@ -55,7 +52,6 @@ Except:
 [EUPHORIGENIC]: http://typodermicfonts.com/euphorigenic-font/
 [EUPHORIGENIC-LICENSE]: http://www.fontspring.com/lic/qqz1p0elum
 [JARGS-BSD]: http://github.com/purcell/jargs/blob/master/LICENCE
-[JULIEN-SPIEWAK]: http://www.julienspiewak.com/
 [MPL-1.0]: http://www.mozilla.org/MPL/1.0/index.txt
 [MPL-1.1]: http://www.mozilla.org/MPL/1.1/index.txt
 [YUICOMPRESSOR-BSD]: https://github.com/yui/yuicompressor/blob/master/LICENSE.TXT
